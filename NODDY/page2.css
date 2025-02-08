@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6a0572, #ff758c);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #ffdfde;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffdfde;
+}
+
+.message {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background: #ff758c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ff527b;
+    transform: scale(1.1);
+}
+
+.proposal {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

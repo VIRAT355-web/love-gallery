@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg') no-repeat center center/cover;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.paper {
+    background: url('https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1');
+    background-size: cover;
+    padding: 30px;
+    box-shadow: 5px 15px 20px rgba(0,0,0,0.4);
+    position: absolute;
+    cursor: grab;
+    transition: transform 0.2s ease-out;
+}
+
+.paper:active {
+    cursor: grabbing;
+}
+
+.paper.heart {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png') no-repeat center center/contain;
+    opacity: 0.7;
+}
+
+.paper.image {
+    padding: 15px;
+    text-align: center;
+}
+
+.paper.image p {
+    font-size: 30px;
+    font-family: 'Zeyada', cursive;
+    color: darkred;
+}
+
+img {
+    max-height: 250px;
+    width: auto;
+    border-radius: 12px;
+    user-select: none;
+}
